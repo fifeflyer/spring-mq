@@ -1,0 +1,11 @@
+{
+    "eventType": "CREDIT_CARD_CHANGE_PAYMENT_METHOD_EVENT",
+    "accountNumber": "000000100003",
+    "changeRequestedBy": "credit",
+    "paymentMethod": {
+        "creditCardNumber": "1212121212",
+        "creditCardType": "VISA",
+        "creditCardOwnerName": "Joe Blog",
+        "creditCardExpiryDate": "02/2020"
+    }
+}

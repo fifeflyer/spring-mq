@@ -1,0 +1,11 @@
+{
+    "eventType": "DIRECT_DEBIT_CHANGE_PAYMENT_METHOD_EVENT",
+    "accountNumber": "000000100003",
+    "changeRequestedBy": "direct",
+    "paymentMethod": {
+        "bankAcctNumber": "6433333333",
+        "bankAcctSortCode": "26-36-46",
+        "bankAcctOwnerName": "AN Other",
+        "changeInitiatedBy": "BANK"
+    }
+}
