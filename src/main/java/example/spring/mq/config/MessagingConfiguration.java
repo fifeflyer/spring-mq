@@ -5,7 +5,6 @@ import com.ibm.msg.client.jms.JmsFactoryFactory;
 import example.spring.mq.message.MessagingPropertyManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.connection.SingleConnectionFactory;
 import org.springframework.jms.core.JmsTemplate;
@@ -16,7 +15,6 @@ import static com.ibm.msg.client.jms.JmsConstants.*;
 import static com.ibm.msg.client.wmq.common.CommonConstants.*;
 
 @Configuration
-@ComponentScan("example.spring.mq")
 public class MessagingConfiguration {
 
     private final MessagingPropertyManager messagingPropertyManager;
