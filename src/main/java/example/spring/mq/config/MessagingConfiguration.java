@@ -46,6 +46,7 @@ public class MessagingConfiguration {
 
     @Bean
     public SingleConnectionFactory singleConnectionFactory() throws JMSException {
+        // Alternative is to use a CachingConnectionFactory.
         SingleConnectionFactory factory = new SingleConnectionFactory();
         factory.setTargetConnectionFactory(jmsConnectionFactory());
         return factory;
