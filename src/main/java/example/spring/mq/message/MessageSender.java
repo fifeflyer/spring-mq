@@ -20,7 +20,8 @@ public class MessageSender {
         Stream.of(
             testMessage.getCreditCardMessage(),
             testMessage.getDirectDebitMessage(),
-            testMessage.getInvoiceMessage())
+            testMessage.getInvoiceMessage(),
+            testMessage.getUnknownMessage())
             .peek(message -> log.info("Sending test message [{}]", messageData.eventType(message)))
             .forEach(this::sendMessage);
     }

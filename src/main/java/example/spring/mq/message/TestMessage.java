@@ -16,4 +16,7 @@ public class TestMessage {
 
     @Value("#{T(example.spring.mq.helper.ResourceHelper).read('classpath:message/invoice.json')}")
     private String invoiceMessage;
+
+    @Value("#{T(example.spring.mq.helper.ResourceHelper).read('classpath:message/unknown.json')}")
+    private String unknownMessage;
 }
